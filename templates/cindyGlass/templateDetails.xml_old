@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>Cindy Lackore</name>
+	<creationDate>08 June 2009</creationDate>
+	<author>Shafiq Issani</author>
+	<authorEmail>shafiqissani@gmail.com</authorEmail>
+	<authorUrl>http://shafiqissani.wordpress.com</authorUrl>
+	<copyright></copyright>
+	<license>Commercial</license>
+	<version>1.0.0</version>
+	<description></description>
+<files>
+    <filename>index.php</filename>
+    <filename>images/bg-flash-hold.gif</filename>
+    <filename>images/bg-footer-menu.png</filename>
+    <filename>images/bg-header-menu.png</filename>
+    <filename>images/bg-left-nav-el.gif</filename>
+    <filename>images/bg-page-b.png</filename>
+    <filename>images/bg-page-t.png</filename>
+    <filename>images/bg-search.png</filename>
+    <filename>images/bg-text-block-b.png</filename>
+    <filename>images/bg-text-block-t.png</filename>
+    <filename>images/icon-bee.png</filename>
+    <filename>images/icon-bird.png</filename>
+    <filename>images/icon-bug.png</filename>
+    <filename>images/icon-card1.png</filename>
+    <filename>images/icon-card2.png</filename>
+    <filename>images/icon-card3.png</filename>
+    <filename>images/icon-cicada.png</filename>
+    <filename>images/icon-conch.png</filename>
+    <filename>images/icon-crab.png</filename>
+    <filename>images/icon-dragonfly.png</filename>
+    <filename>images/icon-fairy.png</filename>
+    <filename>images/icon-fish.png</filename>
+    <filename>images/icon-frog.png</filename>
+    <filename>images/icon-mermaid.png</filename>
+    <filename>images/icon-nest.png</filename>
+    <filename>images/icon-octopus.png</filename>
+    <filename>images/icon-oyster.png</filename>
+    <filename>images/icon-rooster.png</filename>
+    <filename>images/icon-turtle.png</filename>
+    <filename>images/img1.jpg</filename>
+    <filename>images/img2.jpg</filename>
+    <filename>images/img3.jpg</filename>
+    <filename>images/logo.gif</filename>    
+    <filename>images/menu-sep.gif</filename>
+    <filename>images/none.gif</filename>
+    <filename>images/top-nav-sep.gif</filename>
+</files>
+	<positions>
+		<position>topright</position>
+		<position>flashholder</position>
+		<position>search</position>
+		<position>left</position>
+		<position>newsscroller</position>
+		<position>bottommenu</position>
+		<position>copyright</position>
+		<position>debug</position>
+	</positions>
+	<params>
+	</params>
+</install>

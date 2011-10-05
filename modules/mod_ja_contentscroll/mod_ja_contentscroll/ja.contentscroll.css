@@ -1,0 +1,60 @@
+/*------------------------------------------------------------------------
+# JA Zeolite for Joomla 1.5 - Version 1.0 - Licence Owner JA108425
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+#ja-contentslider-center {
+	overflow: hidden;
+	width:98%;
+	
+}
+
+#ja-contentslider-center div.content_element {
+	float: left;
+}
+
+#ja-contentslider-nav-slider {
+	background: url(sliderbar-bg.gif) repeat-x top left;
+	height: 9px;
+	width: 94%;
+}
+
+ 
+#ja-contentslider-nav-knob {
+	background: #666666;
+	font-size: 1px;
+	height: 9px;
+	width: 20px;
+}
+
+#ja-contentslider-nav-left, #ja-contentslider-nav-right {
+	background: url(arrow-left.gif) no-repeat left top;
+	height: 9px;
+	width: 10px;
+}
+
+#ja-contentslider-nav-right {
+	background: url(arrow-right.gif) no-repeat right top;
+}
+
+#ja-contentslider-nav-left, #ja-contentslider-nav-right, #ja-contentslider-nav-slider {
+	display: block;
+	float: left;
+}
+
+#ja-slider {
+	background: url(slider-bg.gif) repeat-x top left;
+	border: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+	padding: 10px 15px;
+	overflow:hidden;
+	
+	width: auto !important;
+	width:90%;
+}
+

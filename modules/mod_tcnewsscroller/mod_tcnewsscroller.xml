@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5">
+	<name>TCNewsScroller</name>
+	<author>Tobacamp</author>
+	<creationDate>August 2008</creationDate>
+	<copyright>Copyright (C)2008 Tobacamp. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>tobacamp@gmail.com</authorEmail>
+	<authorUrl>www.tobacamp.com</authorUrl>
+	<version>1.0.2</version>
+	<description>Scroll up published articles in selected category. More templates and extensions are available at http://tobacamp.com.</description>
+	<files>
+		<filename module="mod_tcnewsscroller">mod_tcnewsscroller.php</filename>
+		<filename>js/tcscroller.js</filename>
+	</files>
+	<params>
+		<param name="catid" type="category" default="0" label="Category" description="Content category for the scroller" />
+		<param name="limit" type="text" default="0" label="Limit" description="Limit to a few articles you need. 0 means all articles." />
+		<param name="limitchar" type="text" default="0" label="Limit Character" description="Limit to a few characters you need. 0 means all introtext." />
+		<param name="readmore" type="radio" default="1" label="Add Read more Link" description="Read more link">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="readmoretext" type="text" default="Read more..." label="Read more Text" description="It will substitute the default Read more text with your defined text. Works if you set readmore parameter to Yes." />
+		<param name="order" type="list" default="ordering" label="Order by" description="Order type">
+			<option value="ordering">Ordering</option>
+			<option value="title">Title</option>
+		</param>
+		<param name="sort" type="radio" default="ASC" label="Sort type" description="Sort type">
+			<option value="ASC">Ascending</option>
+			<option value="DESC">Descending</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="width" type="text" default="200" label="Width" description="Width of the text scroller (pixels)" />
+		<param name="height" type="text" default="250" label="Height" description="Height of the text scroller (pixels)" />			
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="time" type="text" default="3000" label="Pause time" description="Time for the scroller to pause (miliseconds)" />
+	    <param name="speed" type="text" default="75" label="Scroller speed" description="Bigger value means slower" />		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="bgcolor" type="text" default="#FFFFFF" label="Background color" description="Scroller background color. Type color name or color hexa code. Typing 'transparent' will use no background color." />
+		<param name="bordertype" type="list" default="solid" label="Border type" description="Select scroller border type">
+			<option value="solid">Solid</option>
+			<option value="dashed">Dashed</option>
+			<option value="dotted">Dotted</option>
+		</param>
+	    <param name="bordercolor" type="text" default="#000000" label="Border color" description="Scroller border color" />		
+		<param name="borderthickness" type="text" default="1" label="Border Thickness" description="Scroller border thickness" />    
+	</params>
+</install>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5">
+	<name>mod_jaslideshow</name>
+	<author>JoomlArt.com</author>
+	<creationDate>May 2007</creationDate>
+	<copyright>(C) 2007 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.5.0</version>
+	<description>
+		<![CDATA[
+		Version:
+		JA slide show 1.0.0
+		JA slide show module. Display image slide show using ajax.
+		]]>
+	</description>
+	<files>
+		<filename module="mod_jaslideshow">mod_jaslideshow.php</filename>
+		<folder>ja_slideshow</folder>		
+	</files>
+	<params>
+	  
+		<param name="play" type="list" default="0" label="Start status" description="Set the start status of slide show is play or pause.">
+			<option value="1">Play</option>
+			<option value="0">Pause</option>
+		</param>
+		<param name="swidth" type="text" default="550" label="Slide Width" description="Width of Slideshow [px(s)]" />
+		  <param name="sheight" type="text" default="210" label="Slide Height" description="Height of Slideshow [px(s)]" />
+		  <param name="folder" type="text" default="images/stories/fruit/" label="Images Folder" description="Path to folder contain images in slide show" />
+		  <param name="folder_thumb" type="text" default="images/stories/fruit/thumbs" label="Thumbs Folder" description="Path to folder contain thumbnail images in slide show" />
+		  <param name="altimage" type="text" default="JA slide show" label="Alt Images" description="Alt images display when the images not found" />
+		<param name="orderby" type="list" default="0" label="Sort Type" description="The sort order by of the images">
+			<option value="0">Name</option>
+			<option value="1">Time</option>
+		</param>
+		<param name="sort" type="list" default="0" label="Sort Order" description="The sort order of the images">
+			<option value="">Random</option>
+			<option value="1">Ascending</option>
+			<option value="2">Descending</option>
+		</param>
+		<param name="setimagearray" type="text" default="" label="Set list of image to display" description="You can chose an list of images you want to display only. Seperated by comma. Ex: bread.jpg, bun.jpg, coffee.jpg " />
+		<param name="startwith" type="text" default="" label="Start image" description="Specific image to start slide show." />
+		<param name="autoresize" type="list" default="0" label="Auto resize image" description="You can set auto resize the images with a size define. Note: This option is best with Face animation">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="timedisplay" type="text" default="5" label="Display time" description="Display time of image on slide show. [second(s)]" />
+		<param name="timeanimation" type="text" default="2" label="Transition Duration" description="Time of animation on slide show [second(s)]" />
+		<param name="animation" type="list" default="fade" label="Animation Type" description="Animation effect you want to display">
+			<option value="fade">Fading</option>
+			<option value="zoom">Zooming</option>
+			<option value="pan">Panning</option>
+			<option value="combo">Combo - Ken Burns Effect</option>
+			<option value="push">Pushing</option>
+			<option value="wipe">Wiping</option>
+		</param>
+		<param name="ppercent" type="text" default="10" label="Percent of animation" description="This option used with Panning or Combo animation. You can set value in 0% - 100%" />
+		<param name="zpercent" type="text" default="10" label="Percent zoom effect" description="This option used with zoom effect only.  You can set value in 0% - 100%" />
+		<param name="effect" type="list" default="bounceOut" label="Effect" description="Animation effects. Used with Wipe/Push animation only.">
+			<option value="linear">Linear</option>
+			<option value="quadOut">Medium to Slow</option>
+			<option value="cubicOut">Fast to Slow</option>
+			<option value="quartOut">Very Fast to Slow</option>
+			<option value="quintOut">Uber Fast to Slow</option>
+			<option value="expoOut">Exponential Speed</option>
+			<option value="elasticOut">Elastic</option>
+			<option value="backIn">Back In</option>
+			<option value="backOut">Back Out</option>
+			<option value="backInOut">Back In and Out</option>
+			<option value="bounceOut">Bouncing</option>
+		</param>
+		<param name="navigation" type="list" default="" label="Navigation type" description="Chose your navigation type what you want">
+			<option value="">None</option>
+			<option value="thumbnails">Thumbnails</option>
+			<option value="thumbnails fast">Thumbnails and fast</option>
+			<option value="arrows">Simple Arrows</option>
+			<option value="arrows+">Full Arrows</option>
+			<option value="number">Number</option>
+			<option value="number fast">Number and fast</option>
+		</param>
+		<param name="twidth" type="text" default="100" label="Thumbnail Width" description="Width of Thumbnail [px(s)]" />
+		<param name="theight" type="text" default="100" label="Thumbnail Height" description="Height of Thumbnail [px(s)]" />
+		<param name="switch_action" type="list" default="click" label="Switch action" description="Action on navigation to switch images.">
+			<option value="click">Click</option>
+			<option value="mouseenter">Mouseover</option>
+		</param>
+		<param name="showDescription" type="list" default="0" label="Show description" description="Display description for images.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="description_effect" type="list" default="0" label="Description effect" description="Choose effect for description">
+			<option value="fade">Fade</option>
+			<option value="moveup">Moveup</option>
+			<option value="moveup fade">Moveup and Fade</option>
+		</param>
+		<param name="description" type="textarea" cols="50" rows="30" default="" label="Description parameters" description="Specific parameter for each image. Images can have or don't have caption and link to another page.&lt;br /&gt;&lt;br /&gt;
+Syntax: &lt;br /&gt;
+&lt;b style='white-space:nowrap;'&gt;imagename:caption=Image caption&amp;url=http://imagelink &lt;br /&gt;&lt;/b&gt;
+Example: &lt;br /&gt;
+&lt;b style='white-space:nowrap;'&gt;sl-1.jpg:caption=This is description for header 1&amp;url=http://www.yoururlhere.com&lt;/b&gt;
+&lt;br /&gt;Each image per line." />
+
+	</params>
+</install>

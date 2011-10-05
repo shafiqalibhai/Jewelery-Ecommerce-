@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5.0">
+    <name>JA Content Scroll</name>
+    <creationDate>Oct 2007</creationDate>
+    <author>JoomlArt</author>
+    <copyright>GNU / GPL</copyright>
+    <authorEmail>webmaster@joomlart.com</authorEmail>
+    <authorUrl>http://www.joomlart.com</authorUrl>
+    <version>1.0.4</version>
+    <description>
+		<![CDATA[
+		<h3>JA Content Scroll</h3><br />
+		Scroll your contents with category. <br>
+		<font color="#990000"> <strong>Future: </strong></font><br />
+		This module will display your content in a scroll. you can use this module like a scroll bar to view your content list.
+		<br /><font color="#990000"> <strong>You can:</strong></font><br />		
+		- Scroll your content with your width and height properties.<br />
+		- You can set the number of content will display in a tab.<br />
+		- You can set the categories contents will display.<br />
+		- You can set display title, link title, introtext, read more text links or not.<br />
+		- If your site hadn't import mootools.v1.1 so to run this module you have to remove all comment characters in code On line 78 in mod_ja_contentslide.php file to import mootools v1.1 </br>		  
+		  
+		 ]]>
+	</description>
+     <files>
+        <filename module="mod_ja_contentscroll">mod_ja_contentscroll.php</filename>
+		<filename module="mod_ja_contentscroll">mod_ja_contentscroll/mootools.v1.1.js</filename>
+		<filename module="mod_ja_contentscroll">mod_ja_contentscroll/ja.contentscroll.js</filename>
+		<filename module="mod_ja_contentscroll">mod_ja_contentscroll/ja.contentscroll.css</filename>
+		<filename module="mod_ja_contentscroll">mod_ja_contentscroll/application.php</filename>
+		<filename module="mod_ja_contentscroll">mod_ja_contentscroll/arrow-left.gif</filename>
+		<filename module="mod_ja_contentscroll">mod_ja_contentscroll/arrow-right.gif</filename>
+		<filename module="mod_ja_contentscroll">mod_ja_contentscroll/sliderbar-bg.gif</filename>
+		<filename module="mod_ja_contentscroll">mod_ja_contentscroll/slider-bg.gif</filename>
+
+	</files>
+	<params>
+
+        <param name="mootools" type="radio" default="1" label="Include Mootools library" description="This module requires Mootools v1.1x library to function. If your page does include the mootools library, you don't need include it again.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+        </param>
+		<param name="addstyle" type="radio" default="1" label="Add style?" description="Add style of this module in mod_ja_contentscroll/mod_ja_contentscroll/ja._contentscroll.css?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+        <param name="showtitle" type="radio" default="0" label="Title" description="Show/Hide the content's title">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+        </param>
+        <param name="showreadmore" type="radio" default="0" label="Read More" description="Show/Hide the Read More button">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+        </param>
+		 <param name="showintrotext" type="radio" default="1" label="Intro text" description="Show/Hide the content's intro text" >
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		  </param>
+		 <param name="showimages" type="radio" default="1" label="Show image" description="Show/Hide the content's image" >
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		  </param>
+		<param name="autoresize" type="radio" default="1" label="Auto resize images" description="Defines auto resize images is yes or no." >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		  </param>
+		<param name="catid" type="text" default="0" label="Category" description="Select category which you want to display. if you want to display more than one category you can set like 1,2,32,5" />
+		<param name="link_titles" type="radio" default="" label="Linked Titles" description="Make the Item titles linkable">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="link_images" type="radio" default="" label="Linked Images" description="Make the Item images linkable">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="numchar" type="text" default="0" label="Number Characters" description="number of Characters will display. Set 0 to unlimited" />
+		<param name="xheight" type="text" default="200" label="Height of div" description="Height of the div will display" />
+		<param name="xwidth" type="text" default="100" label="Width of div" description="Width of the div will display" />
+		<param name="iheight" type="text" default="80" label="Height of image" description="Height of the image will display" />
+		<param name="iwidth" type="text" default="80" label="Width of image" description="Width of the image will display" />
+		<param name="numElem" type="text" default="4" label="Number Element" description="number of element will display" />
+	</params>
+</install>

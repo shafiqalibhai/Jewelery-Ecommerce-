@@ -1,0 +1,70 @@
+#header .acoount-info ul li,
+#menu ul li,
+#footer .nav li{ background-image: expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");}
+#menu ul ul li,
+#nav ul ul li{ border: expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");}
+/*--- ie 6 png filter's ---*/
+.border-images .btn-crab span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-crab.png', sizingMethod='crop');
+}
+.border-images .btn-cicada span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-cicada.png', sizingMethod='crop');
+}
+.border-images .btn-dragonfly span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-dragonfly.png', sizingMethod='crop');
+}
+.border-images .btn-octopus span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-octopus.png', sizingMethod='crop');
+}
+.border-images .btn-frog span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-frog.png', sizingMethod='crop');
+}
+.border-images .btn-bird span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-bird.png', sizingMethod='crop');
+}
+.border-images .btn-oyster span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-oyster.png', sizingMethod='crop');
+}
+.border-images .btn-fish span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-fish.png', sizingMethod='crop');
+}
+.border-images .btn-rooster span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-rooster.png', sizingMethod='crop');
+}
+.border-images .btn-fairy span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-fairy.png', sizingMethod='crop');
+}
+.border-images .btn-conch span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-conch.png', sizingMethod='crop');
+}
+.border-images .btn-bee span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-bee.png', sizingMethod='crop');
+}
+.border-images .btn-turtle span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-turtle.png', sizingMethod='crop');
+}
+.border-images .btn-mermaid span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-mermaid.png', sizingMethod='crop');
+}
+.border-images .btn-bug span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-bug.png', sizingMethod='crop');
+}
+.border-images .btn-nest span{
+	background:url(none.gif) fixed;
+	filter: progid:dximagetransform.microsoft.alphaimageloader(src='images/icon-nest.png', sizingMethod='crop');
+}

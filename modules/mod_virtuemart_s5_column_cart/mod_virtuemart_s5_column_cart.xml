@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5.0">
+    <name>S5 Column Cart</name>
+    <creationDate>1/1/2008</creationDate>
+    <author>Shape 5</author>
+    <copyright>
+		Copyright (C) 2008 Shape 5 LLC. All rights
+		reserved.
+	</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>contact@shape5.com</authorEmail>
+    <authorUrl>www.shape5.com</authorUrl>
+    <version>1.0</version>
+    <description>Shows your cart contents in column format. By Shape5.com</description>
+     <files>
+        <filename module="mod_virtuemart_s5_column_cart">mod_virtuemart_s5_column_cart.php</filename>
+		<filename>s5_columncart/checkout.gif</filename>
+     </files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="class_sfx" type="text" default="" label="Menu Class Suffix" description="A suffix to be applied to the css class of the menu items" />
+		<param name="introtext" type="text" default="S5 Column Cart" label="Text" description="This is the intro text that is displayed below the first check out now button" />
+		<param name="imageortext" type="radio" default="0" label="Choose Image or Text" description="Use an image or text for your checkout button?">
+			<option value="0">Use Image</option>
+			<option value="1">Use Text</option>
+		</param>
+		
+		<param name="buttonimage" type="text" default="modules/mod_virtuemart_s5_column_cart/s5_columncart/checkout.gif" label="Buttom Image" description="This is the image that is displayed above and below the module for the check out now button" />
+		<param name="buttontext" type="text" default="Check out now" label="Buttom Text" description="This is the text that is displayed above and below the module for the check out now button" />
+		<param name="textsize" type="text" default="12px" label="Text Size" description="Changes the text size for the module" />	</params>
+</install>

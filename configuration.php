@@ -1,0 +1,55 @@
+<?php
+class JConfig {
+	var $offline = '1';
+	var $editor = 'fckeditor';
+	var $list_limit = '20';
+	var $helpurl = 'http://help.joomla.org';
+	var $debug = '0';
+	var $debug_lang = '0';
+	var $sef = '0';
+	var $sef_rewrite = '0';
+	var $sef_suffix = '0';
+	var $feed_limit = '10';
+	var $secret = 'oJV6RmuidbP59yXV';
+	var $gzip = '0';
+	var $error_reporting = '0';
+	var $xmlrpc_server = '0';
+	var $log_path = '/home/content/o/k/2/ok2rest/html/logs';
+	var $tmp_path = '/home/content/o/k/2/ok2rest/html/tmp';
+	var $live_site = '';
+	var $force_ssl = '0';
+	var $offset = '0';
+	var $caching = '0';
+	var $cachetime = '15';
+	var $cache_handler = 'file';
+	var $memcache_settings = array();
+	var $ftp_enable = '1';
+	var $ftp_host = '';
+	var $ftp_port = '21';
+	var $ftp_user = 'ok2rest';
+	var $ftp_pass = '';
+	var $ftp_root = '';
+	var $dbtype = 'mysql';
+	var $host = 'jocms.db.4376705.hostedresource.com';
+	var $user = 'jocms';
+	var $db = 'jocms';
+	var $dbprefix = 'jos_';
+	var $mailer = 'mail';
+	var $mailfrom = '';
+	var $fromname = '';
+	var $sendmail = '/usr/sbin/sendmail';
+	var $smtpauth = '0';
+	var $smtpuser = '';
+	var $smtppass = '';
+	var $smtphost = 'localhost';
+	var $MetaAuthor = '1';
+	var $MetaTitle = '1';
+	var $lifetime = '999';
+	var $session_handler = 'database';
+	var $password = '';
+	var $sitename = '';
+	var $MetaDesc = '';
+	var $MetaKeys = '';
+	var $offline_message = 'This site is down for maintenance. Please check back again soon.';
+}
+?>

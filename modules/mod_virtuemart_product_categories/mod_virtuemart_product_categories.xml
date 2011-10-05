@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5.0">
+	<name>VirtueMart XHTML Product Categories</name>
+	<creationDate>December 2008</creationDate>
+	<author>Ouest Online</author>
+	<authorEmail>jbg@ouest-online.com</authorEmail>
+	<authorUrl>http://www.ouest-online.com</authorUrl>
+	<copyright></copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.1.0</version>
+	<description>Shows VirtueMart product categories with XHTML output.</description>
+	<files>
+		<filename module="mod_virtuemart_product_categories">mod_virtuemart_product_categories.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default=""
+			label="Module Class Suffix"
+			description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="class_sfx" type="text" default=""
+			label="Menu Class Suffix"
+			description="A suffix to be applied to the css class of the menu items" />
+    <param name="link_list_min_rank" type="text" default=""
+			label="Link list starting level"
+			description="First level the XHTML link list should start" />    
+    <param name="link_list_max_rank" type="text" default=""
+			label="Link List last level"
+			description="Last level the XHTML link list should stop" />			
+	</params>
+</install>

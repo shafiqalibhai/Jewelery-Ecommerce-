@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="component" version="1.5">
+  <name>Joomap</name>
+  <creationDate>2008-08-16</creationDate>
+  <author>Daniel Grothe, mic/MGFI</author>
+  <copyright>This component is released under the GNU/GPL License v2</copyright>
+  <authorEmail>software@ko-ca.com</authorEmail>
+  <authorUrl>http://www.koder.de</authorUrl>
+  <version>2.06 Beta2</version>
+  <license>GNU/GPL</license>
+  <description>
+    <![CDATA[
+		<h3 style="padding:0;margin:0">Joomap is a sitemap component for Joomla!</h3>
+		Settings can be configured in the <a href="index2.php?option=com_joomap">&rarr; component menu</a>!<br />
+		Author website: <a href="http://www.koder.de/joomap.html" target="_blank">www.koder.de</a><br />
+		<br />
+		German:<br />
+		<h3 style="padding:0;margin:0">Joomap ist eine Sitemap Komponente f&uuml;r Joomla!</h3>
+		Einstellungen k&ouml;nnen im <a href="index2.php?option=com_joomap">&rarr; Komponenten-Men&uuml;</a> ge&auml;ndert werden!<br />
+		Deutsche Version: <a href="http://www.mgfi.info" target="_blank">www.mgfi.info</a><br />
+	]]>
+  </description>
+  <install />
+  <uninstall />
+  <installfile>install.joomap.php</installfile>
+  <uninstallfile>uninstall.joomap.php</uninstallfile>
+  <files>
+	<filename>joomap.google.php</filename>
+    <filename>joomap.html.php</filename>
+    <filename>joomap.php</filename>
+    <filename>index.html</filename>
+    <filename>css/index.html</filename>
+    <filename>css/joomap.css</filename>
+  </files>
+  <images>
+  	<filename>images/index.html</filename>
+  	<filename>images/img_blue.gif</filename>
+  	<filename>images/img_green.gif</filename>
+  	<filename>images/img_grey.gif</filename>
+  	<filename>images/img_orange.gif</filename>
+  	<filename>images/img_red.gif</filename>
+  	<filename>images/txt_blue.gif</filename>
+  	<filename>images/txt_green.gif</filename>
+  	<filename>images/txt_grey.gif</filename>
+  	<filename>images/txt_orange.gif</filename>
+  	<filename>images/txt_red.gif</filename>
+  </images>
+  <administration>
+		<menu>Joomap</menu>
+		<files>
+			<filename>admin.joomap.php</filename>
+			<filename>admin.joomap.html.php</filename>
+			<filename>toolbar.joomap.php</filename>
+			<filename>toolbar.joomap.html.php</filename>
+			<filename>index.html</filename>
+			<filename>com_joomap.xml</filename>
+			<filename>tmpl/config_css.php</filename>
+			<filename>tmpl/config_display.php</filename>
+			<filename>tmpl/config_menus.php</filename>
+			<filename>tmpl/navigation.php</filename>
+			<filename>tmpl/index.html</filename>
+			<filename>classes/JoomapConfig.php</filename>
+			<filename>classes/JoomapPlugins.php</filename>
+			<filename>classes/index.html</filename>
+			<filename>language/bulgarian.php</filename>
+			<filename>language/english.php</filename>
+			<filename>language/french.php</filename>
+			<filename>language/german.php</filename>
+			<filename>language/germanf.php</filename>
+			<filename>language/germani.php</filename>
+			<filename>language/hungarian_f.php</filename>
+			<filename>language/hungarian_if.php</filename>
+			<filename>language/italian.php</filename>
+			<filename>language/polish.php</filename>
+			<filename>language/russian.php</filename>
+			<filename>language/spanish.php</filename>
+			<filename>language/ukrainian.php</filename>
+			<filename>language/index.html</filename>
+			<filename>plugins/content.plugin.php</filename>
+			<filename>plugins/index.html</filename>
+		</files>
+		<images />
+  </administration>
+  <params />
+</install>

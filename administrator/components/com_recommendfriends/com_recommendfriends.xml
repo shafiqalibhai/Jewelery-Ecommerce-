@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+  <install type="component" version="2.0.3">
+	<name>RecommendFriends</name>
+	<creationDate>v2.0.3 - January-06-2009</creationDate>
+	<author>D-Mack</author>
+	<copyright>This component is released under the GNU/GPL License</copyright>
+	<authorEmail>info@dmackmedia.com</authorEmail>
+	<authorUrl>http://www.dmackmedia.com</authorUrl>
+	<version>2.0.3</version>
+	<description>D-Mack RecommedFriends Component lets your Users recommend your site to their friends.  Features include multiple friend emails, customizable options and messages through the Administration configuration and many, many more!  Setup the component to allow only registered users, or everyone, to recommend your site to their friends!</description>
+
+	<installfile>install.recommendfriends.php</installfile>
+	<uninstallfile>uninstall.recommendfriends.php</uninstallfile>
+
+	<files>
+    <filename>recommendfriends.php</filename>
+    <filename>readme.txt</filename>
+    <filename>changelog.txt</filename>
+    <filename>index.html</filename>
+    <filename>includes/chkfrm.js.php</filename>
+    <filename>includes/monofont.ttf</filename>
+    <filename>includes/comicbook.ttf</filename>
+    <filename>includes/oldcentury.ttf</filename>
+    <filename>includes/301a.js.php</filename>
+    <filename>includes/index.html</filename>
+    <filename>includes/de-DE.php</filename>
+    <filename>includes/en-GB.php</filename>
+    <filename>includes/es-ES.php</filename>
+    <filename>includes/fr-FR.php</filename>
+    <filename>includes/it-IT.php</filename>
+    <filename>includes/nl-NL.php</filename>
+    <filename>includes/pl-PL.php</filename>
+    <filename>includes/ru-RU.php</filename>
+    <filename>includes/tr-TR.php</filename>
+    <filename>includes/reload.jpg</filename>
+	</files>
+
+	<administration>
+    <menu task="Configuration">D-Mack Recommend Friends</menu>
+    <submenu>
+     <menu task="Configuration">Configuration</menu>
+     <menu task="Language">Language</menu>
+     <menu task="Information">Information</menu>
+    </submenu>
+    <files folder="admin">
+     <filename>admin.recommendfriends.php</filename>
+     <filename>admin.recommendfriends.html.php</filename>
+     <filename>config.recommendfriends.php</filename>
+     <filename>securityimage.php</filename>
+     <filename>toolbar.recommendfriends.php</filename>
+     <filename>recommendfriends_screen.jpg</filename>
+    </files>
+	</administration>
+</install>

@@ -1,0 +1,86 @@
+/*------------------------------------------------------------------------
+# JA SlideShow
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2006 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+
+-------------------------------------------------------------------------*/
+#ja-slideshowwrap {
+	position: relative;
+}
+
+#ja-slideshow {
+	margin-left: 10px;
+}
+
+#ja-slideshow div.moduletable {
+	margin: 0;
+	padding: 0;
+}
+
+#ja-slideshow-case {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#ja-slidebar {
+	margin-left: 4px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	display: block;
+	z-index: 100;
+}
+
+#ja-slidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#ja-slidebar ul li {
+	margin: 0 0 10px 0;
+	padding: 0;
+	display: block;
+	width: 74px;
+	height: 49px;
+}
+
+#ja-slidebar ul li.pause {
+	background: none;
+	display: none;
+}
+
+#ja-slidebar ul li a {
+	border: 2px solid #000000;
+	color: #4F4F4F;
+	cursor: pointer;
+	text-decoration: none;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 10px;
+	width: 70px;
+	height: 45px;
+	display: block;
+	float: left;
+	background: url(img/circle.png) no-repeat;
+	font-weight: bold;
+}
+
+#ja-slidebar ul li a:hover {
+	border: 2px solid #FFFFFF;
+	text-decoration: none;
+	color: #333333;
+}
+
+#ja-slidebar a.next,
+#ja-slidebar a.prev {
+	display: none;
+}
+
+#ja-slidebar a.active {
+	background: url(img/circle-active.png) no-repeat;
+}
+

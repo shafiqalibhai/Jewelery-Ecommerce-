@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>Tell a Friend by Shape5.com</title>
+
+<style type="text/css">
+.font {
+font-size: 10pt;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.font2 {
+font-size: 10pt;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+<script language="javascript">
+
+var click;
+
+function message() {
+
+if (click >= 1) {
+
+}
+
+else {
+click = 1;
+document.tellafriend.ymessage.value='';
+}
+
+}
+
+</script>
+
+<script language="javascript">
+<!--
+
+function reset() {
+document.tellafriend.name.value="";
+document.tellafriend.email.value="";
+document.tellafriend.fmail1.value="";
+document.tellafriend.fmail2.value="";
+document.tellafriend.fmail3.value="";
+}
+
+function validate() {
+
+if (document.tellafriend.detect.value.length!=0) {
+alert("Oops! Please enter a friend's email address");
+return false;
+}
+
+else if (document.tellafriend.fmail1_holder.value.length==0) {
+alert("Oops! Please enter a friend's email address");
+return false;
+}
+
+else if (document.tellafriend.email.value.length==0) {
+alert("Oops! Please enter your email address");
+return false;
+}
+
+else if (document.tellafriend.name.value.length==0) {
+alert("Oops! Please enter your name");
+return false;
+}
+
+else {
+document.tellafriend.fmail1.value = document.tellafriend.fmail1_holder.value;
+document.tellafriend.fmail2.value = document.tellafriend.fmail2_holder.value;
+document.tellafriend.fmail3.value = document.tellafriend.fmail3_holder.value;
+document.tellafriend.fmail1_holder.value="";
+document.tellafriend.fmail2_holder.value="";
+document.tellafriend.fmail3_holder.value="";
+document.tellafriend.submit() 
+return true;
+}
+
+}
+
+//-->
+
+</script>
+
+</head>
+
+<body onLoad="reset()" topmargin="0" leftmargin="0"> 
+<br />
+<div align="center">
+ <div style="width:400px;text-align:left;">
+ <div class="font2">Complete the details below to send a link to the current page:</div>
+ <form name="tellafriend" action="tellafriend.php" method="post" onSubmit="return checkfields()">&nbsp;
+   <br />
+    <input type="hidden" size="30" name="detect" maxlength="50">
+   <div class="font">*Your name: &nbsp;
+     <input size="30" name="name" maxlength="45">
+   </div>
+   <br />
+   <div class="font">*Your email: &nbsp;
+     <input size="30" name="email" maxlength="45">
+   </div>
+   <br />  
+   <div class="font2">Enter your message:</div>
+   <br />    
+   <div class="font">
+     <textarea onFocus="message();" name="ymessage" cols="33" rows="4">I found this site today...</textarea>
+   </div>
+   <br />
+   <div class="font2"> 
+        Enter your friend's email addresses:
+   </div>
+   <br />
+   <div class="font">*Email 1: &nbsp;
+     <input size="30" name="fmail1_holder" maxlength="80">
+   </div>
+   <br />
+   <div class="font">Email 2: &nbsp;&nbsp;
+     <input size="30" name="fmail2_holder" maxlength="80">
+   </div>
+   <br />
+   <div class="font">Email 3: &nbsp;&nbsp;
+     <input size="30" name="fmail3_holder" maxlength="80">
+   </div>
+   <br />
+   <div class="font2">
+    This email submission will contain your name and email address.</div> 
+   <br />
+	<input type="hidden" name="fmail1" size="30" maxlength="80">
+	<input type="hidden" name="fmail2" size="30" maxlength="80">
+	<input type="hidden" name="fmail3" size="30" maxlength="80">
+
+   <input onClick="validate();" type="button" style="button" value="Send Email">
+   <script language = "javascript">document.write("<input type=hidden name=refurl value=" + window.opener.s5_taf_parent + ">")</script>
+ </form>
+
+ </div>
+<a style="text-decoration:none;font-family:Arial, Helvetica, sans-serif;font-size:10px;color:#333333;" target="_blank" href="http://www.shape5.com">Tell a Friend by Shape5.com</a>
+</div>
+
+
+</body>
+</html>

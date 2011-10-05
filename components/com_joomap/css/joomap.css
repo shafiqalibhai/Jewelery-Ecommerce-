@@ -1,0 +1,31 @@
+/**
+ * This file sets the CSS-styles for the Joomap sitemap tree.
+ * More info at: http://www.w3schools.com/css/css_list.asp
+ */
+
+.sitemap ul {
+	display		: block;
+	list-style	: none;
+	margin		: 0;
+	padding		: 0;
+}
+.sitemap ul li {
+	margin		: 0;
+	padding		: 0;
+	white-space	: nowrap;
+	background	: transparent;
+}
+.sitemap a img {
+	border		: none;
+}
+.sitemap ul.level_0 ul {
+	list-style	: inside square;
+	padding		: 0;
+}
+.sitemap ul.level_1 li {
+	padding		: 0 0 0 2em;
+	white-space	: nowrap;
+}
+.sitemap li.active a {
+	font-style	: italic;
+}

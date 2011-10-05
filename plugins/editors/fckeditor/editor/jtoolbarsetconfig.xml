@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+<toolbarsets>
+<toolbar name="Advanced">
+<plugingroups>
+<plugingroup>
+<plugin name="Source" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">69</item>
+</param>
+</params>
+</plugin>
+<plugin name="FormatSource" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">68</item>
+</param>
+</params>
+</plugin>
+<plugin name="ShowBlocks" acl="*"/>
+<plugin name="Templates" acl="*"/>
+<plugin name="Preview" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Cut" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">88</item>
+</param>
+<param  name="KeyStrokes" >
+<item type="String">SHIFT</item>
+<item type="Integer">46</item>
+</param>
+</params>
+</plugin>
+<plugin name="Copy" acl="*"/>
+<plugin name="Paste" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">86</item>
+</param>
+<param  name="KeyStrokes" >
+<item type="String">SHIFT</item>
+<item type="Integer">45</item>
+</param>
+</params>
+</plugin>
+<plugin name="PasteText" acl="*"/>
+<plugin name="PasteWord" acl="*"/>
+<plugin name="Spacer"/>
+<plugin name="Print" acl="*"/>
+<plugin name="SpellCheck" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Undo" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">90</item>
+</param>
+</params>
+</plugin>
+<plugin name="Redo" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String" >CTRL</item>
+<item type="integer" >89</item>
+</param>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="String">SHIFT</item>
+<item type="Integer">90</item>
+</param>
+</params> 
+</plugin>
+<plugin name="Spacer"/>
+<plugin name="Find" acl="*"/>
+<plugin name="Replace" acl="*"/>
+<plugin name="Spacer"/>
+<plugin name="SelectAll" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Bold" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">66</item>
+</param>
+</params>
+</plugin>
+<plugin name="Italic" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">73</item>
+</param>
+</params>
+</plugin>
+<plugin name="Underline" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">85</item>
+</param>
+</params>
+</plugin>
+<plugin name="StrikeThrough" acl="*"/>
+<plugin name="Spacer"/>
+<plugin name="Subscript" acl="*"/>
+<plugin name="Superscript" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="OrderedList" acl="*"/>
+<plugin name="UnorderedList" acl="*"/>
+<plugin name="Spacer"/>
+<plugin name="Outdent" acl="*"/>
+<plugin name="Indent" acl="*"/>
+<plugin name="Blockquote" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="JustifyLeft" acl="*"/>
+<plugin name="JustifyCenter" acl="*"/>
+<plugin name="JustifyRight" acl="*"/>
+<plugin name="JustifyFull" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="istyles" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="String">SHIFT</item>
+<item type="Integer">73</item>
+</param>
+</params>
+</plugin>
+<plugin name="CreateDiv" acl="*"/>
+<plugin name="TextColor" acl="*"/>
+<plugin name="BGColor" acl="*"/>
+<plugin name="RemoveFormat" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Link" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">76</item>
+</param>
+</params>
+</plugin>
+<plugin name="JLink" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item  type="String">CTRL</item>
+<item  type="String">SHIFT</item>
+<item  type="Integer">76</item>
+</param>
+</params>
+</plugin>
+<plugin name="Unlink" acl="*"/>
+<plugin name="Anchor" acl="*"/>
+</plugingroup> 
+<plugingroup>
+<plugin name="ImageManager" acl="*" />
+<plugin name="Image" acl="*"/>
+<plugin name="Flash" acl="*"/>
+<plugin name="Spacer" />
+<plugin name="Table" acl="*"/>
+<plugin name="Rule" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Stylesheet" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Style" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="FontFormat" acl="*">
+<params>
+<param  name="FontFormats" value="p;div;pre;address;h1;h2;h3;h4;h5;h6" />
+</params>
+</plugin>
+</plugingroup>
+<plugingroup>
+<plugin name="FontName" acl="*">
+<params>
+<param  name="FontNames" value="Arial ;Courier New ;Tahoma ;Times New Roman ;Verdana" />
+</params>
+</plugin>
+</plugingroup>
+<plugingroup>
+<plugin name="FontSize" acl="*">
+<params>
+<param  name="FontSizes" value="8;9;10;11;12;14;16;18;20;22;24;26;28;36;48;smaller;larger;xx-small;x-small;small;medium;large;x-large;xx-large" />
+</params>
+</plugin>
+</plugingroup>
+<plugingroup>
+<plugin name="Form" acl="*"/>
+<plugin name="Checkbox" acl="*"/>
+<plugin name="Radio" acl="*"/>
+<plugin name="TextField" acl="*"/>
+<plugin name="Textarea" acl="*"/>
+<plugin name="Select" acl="*"/>
+<plugin name="Button" acl="*"/>
+<plugin name="ImageButton" acl="*"/>
+<plugin name="HiddenField" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Smiley" acl="*"/>
+<plugin name="SpecialChar" acl="*"/>
+<plugin name="Spacer"/>
+<plugin name="FitWindow" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item  type="String">ALT</item>
+<item type="Integer">13</item>
+</param>
+</params>
+</plugin>
+<plugin name="Spacer"/>
+<plugin name="About" acl="*"/>
+</plugingroup>
+</plugingroups>
+</toolbar>
+<toolbar name="Creative">
+<plugingroups>
+<plugingroup>
+<plugin name="Source" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">69</item>
+</param>
+</params>
+</plugin>
+<plugin name="FormatSource" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">68</item>
+</param>
+</params>
+</plugin>
+<plugin name="Spacer"/>
+<plugin name="Preview" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Cut" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">88</item>
+</param>
+<param  name="KeyStrokes" >
+<item type="String">SHIFT</item>
+<item type="Integer">46</item>
+</param>
+</params>
+</plugin>
+<plugin name="Copy" acl="*"/>
+<plugin name="Paste" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">86</item>
+</param>
+<param  name="KeyStrokes" >
+<item type="String">SHIFT</item>
+<item type="Integer">45</item>
+</param>
+</params>
+</plugin>
+<plugin name="PasteText" acl="*"/>
+<plugin name="PasteWord" acl="*"/>
+<plugin name="Spacer"/>
+<plugin name="Print" acl="*"/>
+<plugin name="SpellCheck" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">71</item>
+</param>
+</params>
+</plugin>
+</plugingroup>
+<plugingroup>
+<plugin name="Undo" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">90</item>
+</param>
+</params>
+</plugin>
+<plugin name="Redo" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String" >CTRL</item>
+<item type="integer" >89</item>
+</param>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="String">SHIFT</item>
+<item type="Integer">90</item>
+</param>
+</params> 
+</plugin>
+<plugin name="Spacer"/>
+<plugin name="Find" acl="*"/>
+<plugin name="Replace" acl="*"/>
+<plugin name="Spacer"/>
+<plugin name="SelectAll" acl="*"/>
+<plugin name="RemoveFormat" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Form" acl="*"/>
+<plugin name="Checkbox" acl="*"/>
+<plugin name="Radio" acl="*"/>
+<plugin name="TextField" acl="*"/>
+<plugin name="Textarea" acl="*"/>
+<plugin name="Select" acl="*"/>
+<plugin name="Button" acl="*"/>
+<plugin name="HiddenField" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name = "Break"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Bold" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">66</item>
+</param>
+</params>
+</plugin>
+<plugin name="Italic" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">73</item>
+</param>
+</params>
+</plugin>
+<plugin name="Underline" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">85</item>
+</param>
+</params>
+</plugin>
+<plugin name="StrikeThrough" acl="*"/>
+<plugin name="Spacer"/>
+<plugin name="Subscript" acl="*"/>
+<plugin name="Superscript" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="OrderedList" acl="*"/>
+<plugin name="UnorderedList" acl="*"/>
+<plugin name="Spacer"/>
+<plugin name="Outdent" acl="*"/>
+<plugin name="Indent" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="JustifyLeft" acl="*"/>
+<plugin name="JustifyCenter" acl="*"/>
+<plugin name="JustifyRight" acl="*"/>
+<plugin name="JustifyFull" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Link" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">76</item>
+</param>
+</params>
+</plugin>
+<plugin name="JLink" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item  type="String">CTRL</item>
+<item  type="String">SHIFT</item>
+<item  type="Integer">76</item>
+</param>
+</params>
+</plugin>
+<plugin name="Unlink" acl="*"/>
+<plugin name="Anchor" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="TextColor" acl="*">
+<params>
+<param  name="FontColors" value="000000,993300,333300,003300,003366,000080,333399,333333,800000,FF6600,808000,808080,008080,0000FF,666699,808080,FF0000,FF9900,99CC00,339966,33CCCC,3366FF,800080,999999,FF00FF,FFCC00,FFFF00,00FF00,00FFFF,00CCFF,993366,C0C0C0,FF99CC,FFCC99,FFFF99,CCFFCC,CCFFFF,99CCFF,CC99FF,FFFFFF" />
+</params>
+</plugin>
+<plugin name="BGColor" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Table" acl="*"/>
+<plugin name="Rule" acl="*"/>
+<plugin name="Smiley" acl="*"/>
+<plugin name="SpecialChar" acl="*"/>
+<plugin name="PageBreak" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name = "Break"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Style" acl="*"/>
+<plugin name="FontFormat" acl="*">
+<params>
+<param  name="FontFormats" value="p;div;pre;address;h1;h2;h3;h4;h5;h6" />
+</params>
+</plugin>
+<plugin name="FontName" acl="*">
+<params>
+<param  name="FontNames" value="Arial ;Courier New ;Tahoma ;Times New Roman ;Verdana" />
+</params>
+</plugin>
+<plugin name="FontSize" acl="*">
+<params>
+<param  name="FontSizes" value="8;9;10;11;12;14;16;18;20;22;24;26;28;36;48;smaller;larger;xx-small;x-small;small;medium;large;x-large;xx-large" />
+</params>
+</plugin>
+</plugingroup>
+<plugingroup>
+<plugin name="FitWindow" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item  type="String">ALT</item>
+<item type="Integer">13</item>
+</param>
+</params>
+</plugin>
+</plugingroup>
+<plugingroup>
+<plugin name="Spacer" acl="*"/>
+<plugin name="About" acl="*"/>
+</plugingroup>
+</plugingroups>
+</toolbar>
+<toolbar name="Blog">
+<plugingroups>
+<plugingroup>
+<plugin name="Bold" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">66</item>
+</param>
+</params>
+</plugin>
+<plugin name="Italic" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">73</item>
+</param>
+</params>
+</plugin>
+<plugin name="Underline" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">85</item>
+</param>
+</params>
+</plugin>
+<plugin name="Spacer"/>
+<plugin name="OrderedList" acl="*"/>
+<plugin name="UnorderedList" acl="*"/>
+</plugingroup>
+<plugingroup>
+<plugin name="Cut" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">88</item>
+</param>
+<param  name="KeyStrokes" >
+<item type="String">SHIFT</item>
+<item type="Integer">46</item>
+</param>
+</params>
+</plugin>
+<plugin name="Copy" acl="*"/>
+<plugin name="Paste" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">86</item>
+</param>
+<param  name="KeyStrokes" >
+<item type="String">SHIFT</item>
+<item type="Integer">45</item>
+</param>
+</params>
+</plugin>
+<plugin name="PasteText" acl="*"/>
+<plugin name="PasteWord" acl="*"/>
+<plugin name="Spacer"/>
+<plugin name="SpellCheck" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">86</item>
+</param>
+</params>
+</plugin>
+</plugingroup>
+<plugingroup>
+<plugin name = "Break"/>
+</plugingroup>
+<plugingroup>
+<plugin name="BGColor" acl="*"/>
+<plugin name="RemoveFormat" acl="*"/>
+<plugin name="Spacer"/>
+<plugin name="Undo" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">90</item>
+</param>
+</params>
+</plugin>
+<plugin name="Redo" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String" >CTRL</item>
+<item type="integer" >89</item>
+</param>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="String">SHIFT</item>
+<item type="Integer">90</item>
+</param>
+</params> 
+</plugin>
+</plugingroup>
+<plugingroup>
+<plugin name="Link" acl="*">
+<params>
+<param  name="KeyStrokes" >
+<item type="String">CTRL</item>
+<item type="Integer">76</item>
+</param>
+</params>
+</plugin>
+<plugin name="Unlink" acl="*"/>
+<plugin name="Spacer" />
+<plugin name="About" acl="*"/>
+</plugingroup>
+</plugingroups>
+</toolbar>
+</toolbarsets>
+<customplugins>
+<add name="formatsource" lang="en,es,fr,it,ko,nl,pt,ru,za,zh"/>
+<add name="stylesheet" lang="en"/>
+<add name="jlink" lang="en,es,fr,it,ko,nl,pt,ru,za,zh"/>
+<add name="istyles"  lang="en" basepath="FCKBasePath"/>
+<add name="pspellcheck"/>
+<add name="nodepath"/>
+<add name="ImageManager" lang="de,en,fr,nl,no,pl,ru,sv" />
+</customplugins>
+</config>

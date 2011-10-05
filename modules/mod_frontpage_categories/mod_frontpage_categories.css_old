@@ -1,0 +1,22 @@
+/* Frontpage Category Display */
+
+.mainlevel_frontpage_categories {
+	font-weight: bold !important;
+	font-size: 1.2em;
+	font-family; Georgia, Arial;
+	color: #444 !important;
+	
+	padding-top:10px;
+	}
+.mod_frontpage_div {
+	float:left;
+	text-align:left;
+	background:#FCFCFC;
+	margin:5px;
+	padding-bottom:10px;
+	border-right:1px dotted #888;
+	border-bottom:1px dotted #888;
+	}
+.sublevel_frontpage_categories {
+	color: #3399FD !important;
+	}

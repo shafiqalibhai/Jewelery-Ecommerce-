@@ -1,0 +1,139 @@
+<?xml version="2.5" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Bookmarks</name>
+    <creationDate>07/03/2008</creationDate>
+    <author>Webmaster-Tips.net</author>
+    <copyright>Webmaster-Tips.net</copyright>
+    <authorEmail>nenadt@gmail.com</authorEmail>
+    <authorUrl>http://www.webmaster-tips.net</authorUrl>
+    <version>1.5</version>
+    
+    <description>A cross-browser module to allow visitors to quickly and easily bookmark you site, the current page, and up to 3 other links defined by you.
+</description>
+     <files>
+        <filename module="mod_bookmark">mod_bookmark.php</filename>
+		<filename>mod_bookmark.xml</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>index.html</filename>
+		<filename>bookmark_us.js</filename>
+    	<filename>bookmark_page.gif</filename>
+    	<filename>bookmark_site.gif</filename>
+		
+</files>
+	<params>
+    <param name="bus_format" type="list" default="1" label="Module Format"
+     description="Select the display format for the module.  See documentation for more information.">
+     <option value="1">Format 1</option>
+     <option value="2">Format 2</option>
+    </param>
+    <param name="bus_display_image" type="radio" default="1" label="Display Images"
+      description="Do you want to display images in front of the links?">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>      
+    <param name="bus_break_line" type="radio" default="0" label="Show line"
+      description="Do you want to show the seperation line in the module?  See documentation for more information.">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="bus_site" type="radio" default="1" label="Show Bookmark Site"
+      description="Do you want to show the Bookmark Site link?">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="bus_site_def_image" type="radio" default="1" label="Bookmark Site Image"
+      description="Do you want to use the default graphic for the Bookmark Site link (default) or your own custom graphic (user)?">
+      <option value="1">Default</option>
+      <option value="0">User</option>
+    </param>
+    <param name="bus_site_image" type="text" label="Bookmark Site Image File"
+      description="If you are using your own image for the Bookmark Website link, enter the filename here. See documentation for more information.">
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="bus_page" type="radio" default="1" label="Show Bookmark Page"
+      description="Do you want to show the Bookmark Page link?">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="bus_page_def_image" type="radio" default="1" label="Bookmark Page Image"
+      description="Do you want to use the default graphic for the Bookmark Page link (default) or your own custom graphic (user)?">
+      <option value="1">Default</option>
+      <option value="0">User</option>
+    </param>
+    <param name="bus_page_image" type="text" label="Bookmark Page Image File"
+      description="If you are using your own image for the Bookmark Page link, enter the filename here.  See documentation for more information.">
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="bus_b1" type="radio" default="0" label="Show Bookmark 1"
+      description="Do you want to show the Bookmark 1 link?">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="bus_b1_def_image" type="radio" default="1" label="Bookmark 1 Image"
+      description="Do you want to use the default graphic for the Bookmark 1 link (default) or your own custom graphic (user)?">
+      <option value="1">Default</option>
+      <option value="0">User</option>
+    </param>
+    <param name="bus_b1_image" type="text" label="Bookmark 1 Image File"
+       description="If you are using your own graphic for the Bookmark 1 link, enter the filename here.  See documentation for more information.">
+    </param>
+    <param name="bus_b1_text" type="text" label="Bookmark 1 Link Text"
+      description="Link text to appear on the website for Bookmark 1.">
+    </param>
+    <param name="bus_b1_title" type="text" label="Bookmark 1 Link Title"
+      description="Title of page to be bookmarked.">
+    </param>
+    <param name="bus_b1_url" type="text" label="Bookmark 1 Link URL"
+      description="Complete URL (including http, etc) for Bookmark 1.">
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="bus_b2" type="radio" default="0" label="Show Bookmark 2"
+      description="Do you want to show the Bookmark 2 link?">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="bus_b2_def_image" type="radio" default="1" label="Bookmark 2 Image"
+      description="Do you want to use the default graphic for Bookmark 2 (default) or your own custom graphic (user)?">
+      <option value="1">Default</option>
+      <option value="0">User</option>
+    </param>
+    <param name="bus_b2_image" type="text" label="Bookmark 2 Image File"
+       description="If you are using your own graphic for Bookmark 2, enter the filename here.  See documentation for more information.">
+    </param>
+    <param name="bus_b2_text" type="text" label="Bookmark 2 Link Text"
+      description="Link text to appear on the website for Bookmark2">
+    </param>
+    <param name="bus_b2_title" type="text" label="Bookmark 2 Link Title"
+      description="Title of page to be bookmarked.">
+    </param>
+    <param name="bus_b2_url" type="text" label="Bookmark 2 Link URL"
+      description="Complete URL (including http, etc) for Bookmark 2.">
+    </param>    
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="bus_b3" type="radio" default="0" label="Show Bookmark 3"
+      description="Do you want to show the Bookmark 3 link?">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </param>
+    <param name="bus_b3_def_image" type="radio" default="1" label="Bookmark 3 Image"
+      description="Do you want to use the dfault graphic for Bookmark 3 (default) or your own custom graphic (user)?">
+      <option value="1">Default</option>
+      <option value="0">User</option>
+    </param>
+    <param name="bus_b3_image" type="text" label="Bookmark 3 Image File"
+       description="If you are using your own graphic for Bookmark 3, enter the filename here.  See documentation for more information.">
+    </param>
+    <param name="bus_b3_text" type="text" label="Bookmark 3 Link Text"
+      description="Link text to appear on the website for Bookmark 3.">
+    </param>
+    <param name="bus_b3_title" type="text" label="Bookmark 3 Link Title"
+      description="Title of page to be bookmarked.">
+    </param>
+    <param name="bus_b3_url" type="text" label="Bookmark 3 Link URL"
+      description="Complete URL (including http, etc) for Bookmark 3.">
+    </param>
+</params>
+</install>

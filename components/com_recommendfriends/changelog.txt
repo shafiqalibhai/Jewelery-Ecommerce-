@@ -1,0 +1,30 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D-Mack RecommendFriends Version v2.0.3 - January-06-2009 Change Log.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+RecommendFriends v2.0.3
+==============================================================================
+- Fixed an issue with the incorrect default Language file (English) being called in main file
+- Added Dutch Language translation text - Thanks to Adri 'CanBerra' Dekker!!
+- Added Turkish Language translation text - Thanks to Sedat Oguz!!
+- We now have a total of 9 Translations!!
+
+
+RecommendFriends v2.0.2
+==============================================================================
+- Fixed a few issues with the email addresses of the copy (Cc) and Blind Copy (Bcc) emails being sent
+- Fixed a few formatting issues if the 'Custom Message' is disabled in Admin
+- Added Spanish Language translation text - Thanks to Luis J. Pumares!!
+
+
+RecommendFriends v2.0.1
+==============================================================================
+- Updated Jmailer variable code call to fix SMTP email sending errors (emails not being sent)
+- Added ability to set/change width of front end name and email input fields as well as the user message textarea
+- updated all language files with added translation text
+
+
+RecommendFriends v2.0.0
+==============================================================================
+No Changes - Initial Release

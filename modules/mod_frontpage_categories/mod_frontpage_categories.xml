@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<mosinstall type="module" version="1.0.1">
+	<name>VirtueMart Frontpage Categories</name>
+	<creationDate>September 2008</creationDate>
+	<author>PoweredbyVirtuemart</author>
+	<authorEmail>info@poweredbyvirtuemart.com</authorEmail>
+	<authorUrl>http://www.poweredbyvirtuemart.net</authorUrl>
+	<copyright>
+		Copyright (C) 2008-2009 PoweredbyVirtuemart. All rights
+		reserved.
+	</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.1.0</version>
+	<description>Display your categories and subcategories in a module with a lot of control.</description>
+	<files>
+		<filename module="mod_frontpage_categories">mod_frontpage_categories.php</filename>
+		<filename module="mod_frontpage_categories">mod_frontpage_categories.css</filename>
+		<filename module="mod_frontpage_categories">mod_frontpage_categories_functions.php</filename>
+	</files>
+	<params>
+		<param name="num_columns" type="list" default="5"
+			label="How many columns?"
+			description="You can specify how many columns you want to display.">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</param>
+		<param name="mod_height" type="text" default="200" size="5" label="Specify the height of the module" description="You can specify the height of the module div container." />
+		<param name="mod_width" type="text" default="700" size="5" label="Specify the width of the module" description="You can specify the width of the module div container." />
+		<param name="cat_height" type="text" default="100" size="5" label="Specify the height of the category display" description="You can specify the height of the category div container." />
+		<param name="image_width" type="text" default="90" size="5" label="Specify the width of the category image" description="You can specify the width of the category image." />
+		<param name="sub_categories_display" type="text" size="2" default="1" label="Number of sub-categories to display" description="You can specify the depth of the sub-categories you want to display." />
+		
+	</params>
+</mosinstall>

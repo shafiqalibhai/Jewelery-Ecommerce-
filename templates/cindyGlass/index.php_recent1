@@ -1,0 +1,418 @@
+<?php
+/**
+ * @copyright	Copyright (C) 2009 Cindy Lackore All rights reserved.
+ * @license		commercial
+ */
+
+defined('_JEXEC') or die('Restricted access');
+
+?>
+<?php echo '<?xml version="1.0" encoding="utf-8"?'.'>'; ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
+<head>
+<jdoc:include type="head" />
+
+
+<!-- need to update the following syntax -->
+<?php echo "<link rel=\"stylesheet\" href=\"$GLOBALS[mosConfig_live_site]/templates/$GLOBALS[cur_template]/css/ie6.css\" type=\"text/css\"/>" ; ?>
+<!-- ////////////   -->
+<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/cindyGlass/jquery.js"></script>
+<script>
+
+jQuery.noConflict();
+</script>
+<script>
+
+function bookmark(url,title){
+  if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) {
+  window.external.AddFavorite(url,title);
+  } else if (navigator.appName == "Netscape") {
+    window.sidebar.addPanel(title,url,"");
+  } else {
+    alert("Press CTRL-D (Netscape) or CTRL-T (Opera) to bookmark");
+  }
+}
+
+
+$(function(){
+
+//alert("test");
+
+
+
+
+
+
+$(".item13").html("<a href=\"javascript:void(0);\" ><span>Bookmark This Page</span></a>");
+
+debugger;
+$(".mainlevel")[1].click(function(){ bookmark('http://www.cindylackore.com','Cindy'); });
+//onclick='bookmark(\'http://www.cindylackore.com\',\'Cindy\');'
+
+
+});
+
+</script>
+
+
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/cindyGlass/css/all.css" type="text/css" />
+</head>
+<body>
+	<div id="main">
+    <div id="header">
+			<h1 class="logo"><a href="#">CindyLackore</a></h1>
+			<div class="acoount-info">
+            
+            <!-- topright starts here -->
+              <jdoc:include type="modules" name="topright" />
+            <!-- top right ends here -->
+            
+				<ul>
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">View Cart</a></li>
+					<li><a href="#">Check Out</a></li>
+				</ul>
+				<div class="items">(0 items, $0)</div>
+			</div>
+			<div id="menu">
+            
+            <!-- top menu starts here -->
+
+              <jdoc:include type="modules" name="topmenu" />
+
+            <!-- top menu ends here -->    
+                
+<!--
+                <ul>
+					<li><a href="#">Home</a></li>
+					<li>
+						<a href="#">The Artist</a>
+						<ul>
+							<li><a href="#">link 2</a></li>
+							<li><a href="#">link 3</a></li>
+							<li><a href="#">link 4</a></li>
+							<li><a href="#">link 5</a></li>
+							<li><a href="#">link 6</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Custom Gallery</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+-->
+			</div>
+		</div>
+        
+		<div id="content">
+			<div class="content-text">
+				<div class="flash-holder">
+                
+                <!-- flash holder starts here -->
+               <jdoc:include type="modules" name="slideshow" /> 
+
+
+
+                <!-- flash holder ends here -->
+                
+				</div>
+				<div class="text">
+                
+                <!-- messages start here -->
+                  <jdoc:include type="message" />
+                <!-- messages end here -->
+                
+                <!-- component starts here -->
+                    <jdoc:include type="component" />
+				<!-- component ends here -->
+                
+					<h2>Lorem ipsum dolor sit amet, consectetuer adipiscing</h2>
+					<div class="col-l">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris pretium orci a augue. Quisque aliquet, felis eu tincidunt varius, lorem urna cursus ligula, vitae placerat ante magna a diam. Fusce ultricies lorem vitae nunc. Aenean eleifend nisi nec sapien. Aliquam pede eros, sollicitudin</p>
+					</div>
+					<div class="col-r">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris pretium orci a augue. Quisque aliquet, felis eu tincidunt varius, lorem urna cursus ligula, vitae placerat ante magna a diam. Fusce ultricies lorem vitae nunc. Aenean eleifend nisi nec sapien. Aliquam pede eros, sollicitudin</p>
+					</div>
+				</div>
+				<div class="img-gallery">
+					<div>
+						<a href="#"><img src="templates/cindyGlass/images/img1.jpg" width="129" height="155" alt="" /></a>
+					</div>
+					<div>
+						<a href="#"><img src="templates/cindyGlass/images/img2.jpg" width="126" height="155" alt="" /></a>
+					</div>
+					<div>
+						<a href="#"><img src="templates/cindyGlass/images/img3.jpg" width="119" height="155" alt="" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="left-col">
+				<div class="search-hold">
+					<div class="search-field">
+                    
+                    <!-- search starts here -->
+                    <jdoc:include type="modules" name="search" />
+                    <!-- search ends here -->
+                    
+					</div>
+                    
+					<div>
+                    <!-- kept static for now ... will change after functionality of the component is accomplished -->
+                         <a href="#">Search by Color and Price</a>
+                     </div>
+                     
+				</div>
+				<div id="nav">
+					<h5>BROWSE</h5>
+                    
+                    <!-- left starts here -->
+                    <jdoc:include type="modules" name="virtueleftmenu" />
+                    <!-- left ends here -->
+                <!--    
+					<ul>
+						<li>
+							<a href="#">Bees</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Bees Single</a></li>
+								<li><a href="#">Bees on Flowers</a></li>
+								<li><a href="#">Bees on Honeycomb</a></li>
+								<li><a href="#">Bumblebees</a></li>
+								<li><a href="#">Honeybees</a></li>
+								<li><a href="#">Yellow jackets</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Birds</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Birds Nest</a></li>
+								<li><a href="#">Blue jay</a></li>
+								<li><a href="#">Cardinal</a></li>
+								<li><a href="#">Chickadee</a></li>
+								<li><a href="#">Eagle</a></li>
+								<li><a href="#">Flamingo</a></li>
+								<li><a href="#">Hummingbird</a></li>
+								<li><a href="#">Owl</a></li>
+								<li><a href="#">Peacock</a></li>
+								<li><a href="#">Rooster</a></li>
+								<li><a href="#">Sandpipers</a></li>
+								<li><a href="#">Wren</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Bugs</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Cicada</a></li>
+								<li><a href="#">Dragonfly</a></li>
+								<li><a href="#">Ladybug</a></li>
+								<li><a href="#">Scarab Large</a></li>
+								<li><a href="#">Scarab Small</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Butterflies</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Butterfly front</a></li>
+								<li><a href="#">Butterfly side</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Crabs</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Blue crabs</a></li>
+								<li><a href="#">Steamed Crabs</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Dragonflies</a>
+							<ul>
+								<li><a href="#">All</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Fantasy Figures</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Angels</a></li>
+								<li><a href="#">Bee People</a></li>
+								<li><a href="#">Fairies</a></li>
+								<li><a href="#">Mermaids</a></li>
+								<li><a href="#">Merman</a></li>
+								<li><a href="#">Neptune</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Fish</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Anemone</a></li>
+								<li><a href="#">Betta</a></li>
+								<li><a href="#">Clown</a></li>
+								<li><a href="#">Discus</a></li>
+								<li><a href="#">Goldfish</a></li>
+								<li><a href="#">Jellyfish</a></li>
+								<li><a href="#">Jellyfish Group</a></li>
+								<li><a href="#">Koi fish</a></li>
+								<li><a href="#">Lionfish</a></li>
+								<li><a href="#">Octopus</a></li>
+								<li><a href="#">Pond fish</a></li>
+								<li><a href="#">Puffer fish</a></li>
+								<li><a href="#">Sting Rays</a></li>
+								<li><a href="#">Tang</a></li>
+								<li><a href="#">Trigger</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Flowers</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Bouquets</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Frogs</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Bull</a></li>
+								<li><a href="#">Leopard</a></li>
+								<li><a href="#">Poisonous</a></li>
+								<li><a href="#">Tree</a></li>
+								<li><a href="#">On a Leaf</a></li>
+								<li><a href="#">On a Lilleypad</a></li>
+								<li><a href="#">Pond Scene</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Jellyfish</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Jellyfish Single</a></li>
+								<li><a href="#">Jellyfish group</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Mermaids</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Azure</a></li>
+								<li><a href="#">Clownfish</a></li>
+								<li><a href="#">Octopus</a></li>
+								<li><a href="#">Rainbow</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Octopus</a>
+							<ul>
+								<li><a href="#">All</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Oysters</a>
+							<ul>
+								<li><a href="#">All</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Shells</a>
+							<ul>
+								<li><a href="#">Conch Shells</a></li>
+								<li><a href="#">Clams</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Turtles</a>
+							<ul>
+								<li><a href="#">All</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Other/Misc</a>
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#">Alligator</a></li>
+								<li><a href="#">Bears</a></li>
+								<li><a href="#">Monkeys</a></li>
+								<li><a href="#">Opossum</a></li>
+								<li><a href="#">Raccoon</a></li>
+								<li><a href="#">Shark?s tooth</a></li>
+								<li><a href="#">Skunk</a></li>
+								<li><a href="#">Sushi</a></li>
+								<li><a href="#">Voo Doo</a></li>
+							</ul>
+						</li>
+					</ul>
+					-->
+				</div>
+				<div class="text-block">
+					<div class="hold">
+                    
+					<!-- news scroller starts here -->
+                    <jdoc:include type="modules" name="newsscroller" />
+                    <!-- news scroller ends here -->
+                    
+					</div>
+				</div>
+			</div>
+            <div style="clear:both"></div>
+		</div>
+		<div id="footer">
+			<div class="nav">
+            
+            <!-- bottom menu starts here -->
+            <jdoc:include type="modules" name="bottommenu" />
+            <!-- bottom menu ends here -->
+            <!--
+				<ul>
+					<li><a href="#">Email To Friends</a></li>
+					<li><a href="#">Bookmark This Page</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms and Conditions</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+				-->
+			</div>
+			<ul class="card-list">
+				<li><a href="#"><img src="images/icon-card1.png" width="39" height="23" alt="" /></a></li>
+				<li><a href="#"><img src="images/icon-card2.png" width="38" height="23" alt="" /></a></li>
+				<li><a href="#"><img src="images/icon-card3.png" width="37" height="23" alt="" /></a></li>
+			</ul>
+			<div class="copyright">
+            
+            <!-- copyright starts here -->
+            <jdoc:include type="modules" name="copyright" />
+            <!-- copyright ends here -->
+            
+            Copyright 2008 Cindy Lackore All rights reserved
+            
+            <!-- debug starts here -->
+            <jdoc:include type="modules" name="debug" />
+            <!-- debug ends here -->
+            
+            </div>
+		</div>
+		<div class="border-images">
+			<a href="#" class="btn-crab"><span>crab</span></a>
+			<a href="#" class="btn-cicada"><span>cicada</span></a>
+			<a href="#" class="btn-dragonfly"><span>dragonfly</span></a>
+			<a href="#" class="btn-octopus"><span>octopus</span></a>
+			<a href="#" class="btn-frog"><span>frog</span></a>
+			<a href="#" class="btn-bird"><span>bird</span></a>
+			<a href="#" class="btn-oyster"><span>oyster</span></a>
+			<a href="#" class="btn-fish"><span>fish</span></a>
+			<a href="#" class="btn-rooster"><span>rooster</span></a>
+			<a href="#" class="btn-fairy"><span>fairy</span></a>
+			<a href="#" class="btn-conch"><span>conch</span></a>
+			<a href="#" class="btn-bee"><span>bee</span></a>
+			<a href="#" class="btn-turtle"><span>turtle</span></a>
+			<a href="#" class="btn-mermaid"><span>mermaid</span></a>
+			<a href="#" class="btn-bug"><span>bug</span></a>
+			<a href="#" class="btn-nest"><span>nest</span></a>
+		</div>
+	</div>
+
+</body>
+</html>
